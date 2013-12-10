@@ -8,8 +8,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 PRODUCT_NAME := full_marakana_alpha
 PRODUCT_DEVICE := alpha
 PRODUCT_MODEL := Full Marakana Alpha Image for Emulator
-PRODUCT_BRAND := Android_Marakana
-PRODUCT_MANUFACTURER := Marakana
+#PRODUCT_BRAND := Android_Marakana
+#PRODUCT_MANUFACTURER := Marakana
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/marakana/alpha/device.mk)
