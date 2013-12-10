@@ -17,3 +17,5 @@ PRODUCT_COPY_FILES += \
 # Enable overlays
 DEVICE_PACKAGE_OVERLAYS := $(MY_PATH)/overlay
 
+# Include all packages from this file
+include $(MY_PATH)/packages.mk
