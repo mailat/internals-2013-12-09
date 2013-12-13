@@ -12,7 +12,7 @@ Special code for copy and reuse the x86 goldfish qemu kernel:
 2. cp system/core/rootdir/etc/init.goldfish.rc device/marakana/alpha/
 3. cp system/core/rootdir/etc/ueventd.goldfish.rc device/marakana/alpha/
 4. edit BoardConfig.mk and change to TARGET_NO_KERNEL := false
-4. edit common.mk (check device/lge/mako/common.mk) and add the following lines:
+5. edit common.mk (check device/lge/mako/common.mk) and add the following lines:
 
 * Enable our custom kernel*
 
@@ -31,11 +31,15 @@ PRODUCT_COPY_FILES += $(MY_PATH)/ueventd.goldfish.rc:root/ueventd.goldfish.rc
 http://adt-addons.googlecode.com/svn/trunk/source/com.android.ide.eclipse.source.update/
 
 *SDK Addon*
+
 https://github.com/twitter-university/alpha_sdk_addon
 
 *Python 2.6 installation instructions*
+
 sudo add-apt-repository ppa:fkrull/deadsnakes
+
 sudo apt-get update
+
 sudo apt-get install python2.6 python2.6-dev
 
 
